@@ -9,7 +9,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyanAccent,
-        title: Text('Row & Column Design',style: TextStyle(color: Colors.black),),
+        title: Text(
+          'Row & Column Design',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Container(
         // first Column with Scroll view
@@ -58,10 +61,10 @@ class HomePage extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 1.0,
-                  ),
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 1.0,
+                        ),
                         color: Color(0xff535be3),
                       ),
                       height: 80.0,
@@ -82,10 +85,11 @@ class HomePage extends StatelessWidget {
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
-                        color: Color(0xff4c1130),border: Border.all(
-                        color: Colors.black,
-                        width: 1.0,
-                      ),
+                        color: Color(0xff4c1130),
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 1.0,
+                        ),
                       ),
                       height: 80.0,
                       width: 120.0,
