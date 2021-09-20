@@ -4,6 +4,16 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  BoxDecoration borderDeco({Color? color}) {
+    return BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: color,
+        border: Border.all(
+          color: Colors.black,
+          width: 1.0,
+        ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,25 +36,15 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                      decoration: borderDeco(
                         color: Color(0xff820c0c),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
                       ),
                       height: 100.0,
                       width: 170.0,
                     ),
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                      decoration: borderDeco(
                         color: Color(0xff245f05),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
                       ),
                       height: 100.0,
                       width: 170.0,
@@ -59,37 +59,21 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
+                      decoration: borderDeco(
                         color: Color(0xff535be3),
                       ),
                       height: 80.0,
                       width: 120.0,
                     ),
                     Container(
-                      height: 80.0,
-                      width: 100.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        color: Color(0xff20124d),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
-                      ),
-                    ),
+                        height: 80.0,
+                        width: 100.0,
+                        decoration: borderDeco(
+                          color: Color(0xff20124d),
+                        )),
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                      decoration: borderDeco(
                         color: Color(0xff4c1130),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
                       ),
                       height: 80.0,
                       width: 120.0,
@@ -107,23 +91,13 @@ class HomePage extends StatelessWidget {
                     Container(
                       height: 80.0,
                       width: 220.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                      decoration: borderDeco(
                         color: Color(0xff973e12),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
+                      decoration: borderDeco(
                         color: Color(0xff7e6001),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1.0,
-                        ),
                       ),
                       height: 75.0,
                       width: 120.0,
